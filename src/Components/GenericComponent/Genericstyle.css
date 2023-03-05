@@ -76,6 +76,7 @@ font-size: 23px;
 
 @media screen and (max-width : 900px)  {
   .view-gen{
+    width: 85rem;
     margin-top:70px;
     margin-left: -10rem;
   }
