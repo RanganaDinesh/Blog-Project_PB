@@ -1,6 +1,7 @@
 import React  from 'react'
 import '../GenericComponent/Genericstyle.css'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import imgdown from '../../../src/Assets/arro'
 
 
@@ -18,7 +19,8 @@ const GenericPages = ({articles}) => {
     
       {articlesData.map((articles, index) => {
         return (
-          <>          <div>  <h2 className='generic-head'><span className='Article-line'>{articles.content}</span> </h2></div>
+          <>
+            <Link to={`/articles`} style={{textDecoration:'none'}}>      <div>  <h2 className='generic-head'><span className='Article-line'>{articles.content}</span> </h2></div>
           <div className='generic-container' key={index}  id='generic-box'>
               
             <div className='Article-img' >
@@ -30,7 +32,7 @@ const GenericPages = ({articles}) => {
               <span className='Article-span'>{articles.category}<span className='Article-span1'>{articles.date}</span></span>
             </div> 
             </div>
-           
+            </Link>
           </>
 )
       })} 

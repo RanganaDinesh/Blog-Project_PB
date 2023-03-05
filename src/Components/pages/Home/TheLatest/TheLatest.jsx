@@ -17,12 +17,12 @@ const TheLatest = ({articles}) => {
       {articlesData.map((article, index) => {
         
       return(  <div>
-        <div className='post-box' key={index}>
+        <div className='post-box' key={index} id='post-box'>
         <div className='post-img'>
-                <img className='post-img' src={article.url} alt={article.alt} />
+                <img className='post-img' id='post-img' src={article.url} alt={article.alt} />
         </div>
         <div>
-        <a href={article.link}className='post-a' id='a'> <h3 className='post-header'> {article.caption}</h3></a>
+        <a href={article.link}className='post-a' id='a'> <h3 className='post-header' id="post-header"> {article.caption}</h3></a>
         <p className='post-pre'>
         {article.about}
         </p>

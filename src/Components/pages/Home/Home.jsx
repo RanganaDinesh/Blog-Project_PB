@@ -22,7 +22,7 @@ const Home = () => {
           <div className='mainheadingimg'>
               <Link to='/Taggle1'>
                    
-              <img className='headimg1' src="https://media.istockphoto.com/id/1216022853/photo/kolli-hills-kollimalai-seventy-hairpin-bends-located-in-central-tamil-nadu-india.jpg?s=612x612&w=0&k=20&c=v6W8Nz3E9TFSHIeLlxWCU3UXekEwdmj2H0kWdBYfebk=" alt="" />
+              <img className='headimg1' id='img1-home' src="https://media.istockphoto.com/id/1216022853/photo/kolli-hills-kollimalai-seventy-hairpin-bends-located-in-central-tamil-nadu-india.jpg?s=612x612&w=0&k=20&c=v6W8Nz3E9TFSHIeLlxWCU3UXekEwdmj2H0kWdBYfebk=" alt="" />
               <div className='text-on-img1'>
                 <h2> Tamilnadu Tourism</h2>
                     <br />
@@ -35,13 +35,13 @@ const Home = () => {
                   <Link to='/Taggle2' >
                       
                       
-                  <img src="https://media.istockphoto.com/id/1383968693/photo/beautiful-view-of-clouds-and-fog-on-top-of-girnar-hills-during-monsoon-view-of-the-dattatreya.jpg?s=612x612&w=0&k=20&c=7S5jKEGTtc9t40c3YufWTV1ddIMLpRNphgZBSQ_pB5A=" alt="" className='headimg2' /> <br /> <br />
+                  <img src="https://media.istockphoto.com/id/1383968693/photo/beautiful-view-of-clouds-and-fog-on-top-of-girnar-hills-during-monsoon-view-of-the-dattatreya.jpg?s=612x612&w=0&k=20&c=7S5jKEGTtc9t40c3YufWTV1ddIMLpRNphgZBSQ_pB5A=" alt="" className='headimg2'id='img2-home' /> <br /> <br />
                   <h3 className='text-on-img2'> Explore  on Hills</h3> <br /><br />
                   <span  className='text-on-img2'>Travel/Feb 20 2023</span> 
                   </Link>
                   
                   <Link to='/Taggle3'>
-                  <img src="https://i.vimeocdn.com/video/903643345-ceb9401558f6c0bf06dc6e4e05d85b222bbac49e50bca1b178b0af40d04c7538-d_640x360.jpg" alt="" className='headimg2' style={{ marginTop: '-50px' }} />
+                  <img src="https://i.vimeocdn.com/video/903643345-ceb9401558f6c0bf06dc6e4e05d85b222bbac49e50bca1b178b0af40d04c7538-d_640x360.jpg" alt="" className='headimg2'id='img2-home' style={{ marginTop: '-50px' }} />
                   <h3 className='text-on-img2'> Explore on Skys</h3>
                   <br /><br />
                   <br />

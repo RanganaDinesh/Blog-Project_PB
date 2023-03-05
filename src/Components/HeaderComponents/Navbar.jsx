@@ -55,14 +55,16 @@ const Navbar = () => {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}  >
-        <AppBar position="fixed">
-          <Toolbar id='tools'>
+      <div >
+      <Box sx={{ flexGrow: 1 }}   >
+        <AppBar position="fixed" >
+          <Toolbar >
             <Typography
               className="logo"
               variant="h1"
               component="div"
-              sx={{ flexGrow: 1 }}
+                sx={{ flexGrow: 1 }}
+               
             >
               <Link className="links" to="/" style={{textDecoration:'none'}}>
                 <span className="the" style={{color:'black',fontSize:'17px', marginLeft:'170px',marginRight: '-10px',}}>The</span>
@@ -164,7 +166,8 @@ const Navbar = () => {
      
          
 
-      <Outlet />
+        <Outlet />
+        </div>
     </>
   );
 };

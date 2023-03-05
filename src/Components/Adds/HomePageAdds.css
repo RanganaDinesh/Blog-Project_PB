@@ -66,7 +66,7 @@
     margin-left: -107px;
     margin-bottom: 30px;
 }
-@media  (max-width : 520px) and (min-width: 200px){
+@media screen and (max-width : 900px) {
     .nonn{
       display: none;
     }  

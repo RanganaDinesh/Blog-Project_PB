@@ -17,6 +17,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
+import Navbar from "../../HeaderComponents/Navbar";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -55,9 +56,14 @@ const Nav = () => {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }} className="app-bar" id='tools' >
+      <div>
+        <div  className="app-bar1"  >
+
+          <Navbar/>
+        </div>
+      <Box sx={{ flexGrow: 1 }} className="app-bar"   style={{display:'none'}}> 
         <AppBar position="fixed">
-          <Toolbar>
+          <Toolbar >
             <Typography
               className="logo"
               variant="h1"
@@ -204,7 +210,9 @@ const Nav = () => {
       </nav>
          
 
-      <Outlet />
+        <Outlet />
+        
+        </div>
     </>
   );
 };

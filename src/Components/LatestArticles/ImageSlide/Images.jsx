@@ -6,7 +6,7 @@ const Images = ({ images }) => {
   
   return (
     <div className="slideshow-container">
-      <div className="slider">
+      <div className="slider"  >
         <SimpleImageSlider
           width={950}
           height={450}
@@ -16,6 +16,7 @@ const Images = ({ images }) => {
           autoPlay={true}
           slideDuration={2}
           loop
+         
         />
       </div>
       <div className="slider-mobile">
@@ -28,6 +29,7 @@ const Images = ({ images }) => {
           autoPlay={true}
           slideDuration={2}
           loop
+        
         />
       </div>
     </div>

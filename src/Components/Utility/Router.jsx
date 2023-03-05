@@ -12,10 +12,13 @@ import Error from '../pages/Error'
 import Taggle1 from '../TravelInformation/Travel-img-onclick-info/Taggle1'
 import Taggle2 from '../TravelInformation/Travel-img-onclick-info/Taggle2'
 import Taggle3 from '../TravelInformation/Travel-img-onclick-info/Taggle3'
+// import GenericInfo from '../GenericComponent/GenericInfo';
 
 
 
 function Router() {
+  // const hollywood = require('../../Components/Api-Data/Hollywood-data.json')
+
   return (
     <BrowserRouter>
       <Routes>
@@ -30,7 +33,8 @@ function Router() {
         </Route>
         <Route path='/Taggle1' element={<Taggle1/>}></Route>
         <Route path='/Taggle2' element={<Taggle2/>}></Route>
-        <Route path='/Taggle3' element={<Taggle3/>}></Route>
+        <Route path='/Taggle3' element={<Taggle3 />}></Route>
+        {/* <Route path="/articles" element={<GenericInfo articles={hollywood}/>} /> */}
     </Routes>
     
     </BrowserRouter>

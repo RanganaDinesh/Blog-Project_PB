@@ -28,18 +28,19 @@
     height: 50rem;
   }
   
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 900px) {
     .slideshow-container {
       box-sizing: border-box;
       margin: 4rem auto auto;
-      width: 100px;
+    width: 40rem;
       height: 250px;
-      margin-left: 150px;
+      margin-left: 30rem;
     }
   
     .slider {
       display: none;
     }
+
   
     .slider-mobile {
       display: block;

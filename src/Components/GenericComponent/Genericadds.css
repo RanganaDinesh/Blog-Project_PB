@@ -69,7 +69,7 @@
     margin-left: -107px;
     margin-bottom: 30px;
 }
-@media all and (max-width : 520px) and (min-width: 100px) {
+@media screen and (max-width : 900px)  {
     #box-bt{
         display: none;
     } 

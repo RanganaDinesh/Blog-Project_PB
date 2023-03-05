@@ -64,10 +64,23 @@ font-size: 23px;
     font-size: 14px;
     color: #908D8D;
 }
-@media   (max-width : 520px) and (min-width: 200px) {
+@media screen and (max-width : 900px)  {
     #post-display{
         flex-direction: column;
-      margin-left: 20rem;
+     
+    }
+    #post-box{
+        margin-left: -40px;
+        width: 85rem;
+        height: 60rem;
+    }
+    #post-img{
+        width: 85rem;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+    #post-header{
+        margin-top: 200px;
     }
 
 }

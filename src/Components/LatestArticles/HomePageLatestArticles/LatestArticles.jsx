@@ -23,7 +23,7 @@ const LatestArticles = ({articles}) => {
               <img src={article.url} alt={article.alt} id='Article-img' />
             </div>
             <div>
-              <a href={article.link} className='Article-a' id='Article-a'> <h2 className='Article-header'>{article.caption}</h2></a>
+              <a href={article.link} className='Article-a' id='Article-a'> <h2 className='Article-header' id='Article-header'>{article.caption}</h2></a>
               <p className='Article-pre' id='Article-pre'>{ article.about}</p>
               <span className='Article-span'>{article.category}<span className='Article-span1'>{article.date}</span></span>
             </div>
