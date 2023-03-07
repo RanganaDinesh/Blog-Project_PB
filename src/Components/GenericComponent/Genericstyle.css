@@ -19,7 +19,7 @@ font-size: 23px;
 
 }
 .Article-pre{
-    font-size: 14px;
+    /* font-size: 14px; */
     margin: 10px 50px 10px 50px;
     flex-wrap: wrap;
     width:550px ;
@@ -29,6 +29,7 @@ font-size: 23px;
 .view-gen{
     flex-wrap: wrap;
     margin-top: -70px;
+    /* padding-bottom: 0.1px; */
 }
 .Article-a{
     text-decoration: none;
@@ -71,6 +72,7 @@ font-size: 23px;
     height: 250px;
     border-top: 3px solid #F0F0F0;
    padding-top: 34px;
+   /* padding-bottom: 30px; */
     margin: 0px 0px 100px 350px;
 }
 
