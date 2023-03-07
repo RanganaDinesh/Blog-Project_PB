@@ -17,7 +17,8 @@ const Home = () => {
   
   return (
       <>
-          
+      
+          <div id='kiku'>
        
           <div className='mainheadingimg'>
               <Link to='/Taggle1'>
@@ -48,10 +49,12 @@ const Home = () => {
                   <span  className='text-on-img2'>Travel/Feb 20 2023</span> 
                   </Link>
             </div>
-      </div>
-      
+        </div>
+        
+        <Link to='/Taggle3'  style={ {textDecoration:'none'}}>
+      {/*  */}
       {/* // the latest selction posts*/}
-      <TheLatest articles={articleLink} />
+          <TheLatest articles={articleLink} />
       {/* / the latest Articles/ */}
       <div className='art'>
         <div>
@@ -85,8 +88,8 @@ const Home = () => {
           <span style={{color:'#000000',fontSize:'14px',bottom:'0px'}}>Travel<span style={{color:'#908D8D',fontSize:'14px'}}>/feb 03 2023</span></span>
         </div>
         </div>
+        </div></Link>
         </div>
-      
       </>
   )
 }

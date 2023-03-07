@@ -13,6 +13,9 @@ import Taggle1 from '../TravelInformation/Travel-img-onclick-info/Taggle1'
 import Taggle2 from '../TravelInformation/Travel-img-onclick-info/Taggle2'
 import Taggle3 from '../TravelInformation/Travel-img-onclick-info/Taggle3'
 // import GenericInfo from '../GenericComponent/GenericInfo';
+import GenericInfo from '../GenericComponent/GenericInfo';
+// import { Box } from '@mui/material';
+// import GenericDetails from '../GenericComponent/GenericDetails';
 
 
 
@@ -20,6 +23,7 @@ function Router() {
   // const hollywood = require('../../Components/Api-Data/Hollywood-data.json')
 
   return (
+  
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Nav/>}>
@@ -35,10 +39,12 @@ function Router() {
         <Route path='/Taggle2' element={<Taggle2/>}></Route>
         <Route path='/Taggle3' element={<Taggle3 />}></Route>
         {/* <Route path="/articles" element={<GenericInfo articles={hollywood}/>} /> */}
+        <Route path='/Details/:id' element={<GenericInfo/>}/>
+        {/* <Route path='/Details/:id' element={<GenericDetails/>}/> */}
     </Routes>
     
     </BrowserRouter>
-  
+   
   );
 }
 

@@ -1,4 +1,4 @@
-[
+export const TechnologyData=[
     {
         "id": 1,
         "content":"Technology",

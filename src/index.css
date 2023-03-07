@@ -1,3 +1,5 @@
+
+
 .head{
   display:flex ;
   justify-content: space-evenly;
@@ -46,6 +48,7 @@ margin-right: 150px;
   margin-left: 50px;
  
 }
+
 .headimg2{
   margin-bottom: 25px;
   width: 400px;
@@ -241,7 +244,6 @@ html {
   .navbar {
     display: none;
   }
-
  
 /*  */
 
@@ -256,11 +258,15 @@ html {
   #res-nav{
     display: none;
   }
+  #kiku{
+    margin: auto;
+  }
 
   .mainheadingimg{
     flex-direction: column;
     margin-left: 10rem;
-    
+   width: 500px;
+     
   }
 
   .menu-list {
@@ -318,6 +324,7 @@ html {
   }
 
   .app-bar1 {
+    width: 900px;
     display: block;
   }
   #footer-main{
@@ -326,7 +333,7 @@ html {
   }
   #jashu{ margin-left: 10rem;
     margin-top: 90px;
-    width: 85rem;
+   max-width: 900px;
   }
   /* #nav-headsss{
 width: 45rem;

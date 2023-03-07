@@ -1,4 +1,4 @@
-[
+export const FitnessData=[
     {
         "id": 1,
         "content":"Fitness",

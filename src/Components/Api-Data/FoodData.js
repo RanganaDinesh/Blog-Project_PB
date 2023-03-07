@@ -1,4 +1,4 @@
-[
+export const FoodData=[
     {
         "id": 1,
         "content":"Food",

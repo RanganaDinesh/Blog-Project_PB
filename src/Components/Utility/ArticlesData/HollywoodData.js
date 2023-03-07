@@ -1,4 +1,4 @@
- [
+export const HollywoodData= [
     {
         "id": 1,
         "content":"Hollywood",
