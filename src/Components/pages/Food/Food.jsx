@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState , useEffect} from "react";
+// import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { FoodData } from '../../Api-Data/FoodData';
 import GenericAdds from '../../GenericComponent/GenericAdds'

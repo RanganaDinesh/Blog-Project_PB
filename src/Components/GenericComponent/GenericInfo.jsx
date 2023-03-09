@@ -9,7 +9,7 @@ import { useParams,useLocation } from 'react-router-dom'
 
 
 
-const GenericInfo = ({  }) => {
+const GenericInfo = () => {
   const Params = useParams();
   const Location = useLocation();
 

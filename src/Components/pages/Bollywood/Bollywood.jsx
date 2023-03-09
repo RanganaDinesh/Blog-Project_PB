@@ -23,7 +23,7 @@
 
 import { BollywoodData } from "../../Utility/ArticlesData/BollywoodArticles";
 import GenericPages from "../../GenericComponent/GenericPages";
-import { useState , useEffect} from "react";
+// import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import React from 'react'
 import GenericAdds from '../../GenericComponent/GenericAdds'
