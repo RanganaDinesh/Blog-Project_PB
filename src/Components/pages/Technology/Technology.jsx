@@ -1,10 +1,9 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 // import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-// import { TechnologyData } from '../../Api-Data/TechnologyData';
+import { TechnologyData } from '../../Api-Data/TechnologyData';
 import GenericAdds from '../../GenericComponent/GenericAdds'
 import GenericPages from '../../GenericComponent/GenericPages'
-
 
 const Technology = () => {
     const Navigate = useNavigate()
@@ -20,16 +19,10 @@ const Technology = () => {
   const adds = require('../../Api-Data/technology/adds-data.json');
   const videos = require('../../Api-Data/technology/videos-data.json');
   const posts = require('../../Api-Data/technology/posts-data.json')
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/Technology").then(res => res.json()).then(data => { setData(data); console.log(data)})
-   
-  });
   return (
     <div className='dinu'>
        <div className="bollywood">
-      {data.map((item) => {
+      {TechnologyData.map((item) => {
         return (
           <div key={item.id} onClick={()=>handlenavigate(item.id,item)}>
             <GenericPages

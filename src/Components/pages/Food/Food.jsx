@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 // import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { FoodData } from '../../Api-Data/FoodData';
@@ -18,16 +18,10 @@ const Food = () => {
   const videos = require('../../Api-Data/food-page/videos-data.json');
   const posts = require('../../Api-Data/food-page/posts-data.json')
   // const Food = require('../../Api-Data/Food-data.json')
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/Food").then(res => res.json()).then(data => { setData(data); console.log(data)})
-   
-  });
   return (
     <div className='dinu'>
      <div className="bollywood">
-      {data.map((item) => {
+      {FoodData.map((item) => {
         return (
           <div key={item.id} onClick={()=>handlenavigate(item.id,item)}>
             <GenericPages
