@@ -21,15 +21,17 @@
 
 // export default Bollywood
 
-import { BollywoodData } from "../../Utility/ArticlesData/BollywoodArticles";
+// import { BollywoodData } from "../../Utility/ArticlesData/BollywoodArticles";   
 import GenericPages from "../../GenericComponent/GenericPages";
 // import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import GenericAdds from '../../GenericComponent/GenericAdds'
-
-
+// import axios from 'axios';
+ 
 const Bollywood = () => {
+
+
   const Navigate = useNavigate()
   const handlenavigate = (id , item) => {
     Navigate(`/Details/${id}`,{
@@ -42,12 +44,19 @@ const Bollywood = () => {
   const adds = require('../../Api-Data/bollywood/adds-data.json');
   const videos = require('../../Api-Data/bollywood/video.json');
   const posts = require('../../Api-Data/bollywood/topposts-data.json')
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/Bollywood").then(res => res.json()).then(data => { setData(data); console.log(data)})
+   
+  });
+
   return (
     <>    
 
     <div className='dinu'>
     <div className="bollywood">
-      {BollywoodData.map((item) => {
+      {data.map((item) => {
         return (
           <div key={item.id} onClick={()=>handlenavigate(item.id,item)}>
             <GenericPages

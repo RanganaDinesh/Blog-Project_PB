@@ -74,7 +74,7 @@ const GenericPages = ({ id,content, url, date,about, caption , category,alt  }) 
   // const [articlesData, setArticlesData] = useState([]);
   // //
 
- 
+ //
   // useEffect(() => {
   //   setArticlesData(articles);
   // }, [articles]);

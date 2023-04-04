@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 // import { useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-import { FitnessData } from '../../Api-Data/FitnessData';
+// import { FitnessData } from '../../Api-Data/FitnessData';
 import GenericAdds from '../../GenericComponent/GenericAdds'
 import GenericPages from '../../GenericComponent/GenericPages'
 
@@ -18,10 +18,17 @@ const Fitness = () => {
   const videos = require('../../Api-Data/fitness/videos.json');
   const posts = require('../../Api-Data/fitness/topposts.json')
   // const Fitness = require('../../Api-Data/fitness-data.json')
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/Fitness").then(res => res.json()).then(data => { setData(data); console.log(data)})
+   
+  });
+  
   return (
     <div className='dinu'>
       <div className="bollywood">
-      {FitnessData.map((item) => {
+      {data.map((item) => {
         return (
           <div key={item.id} onClick={()=>handlenavigate(item.id,item)}>
             <GenericPages
